@@ -12,7 +12,15 @@ repositories {
 }
 
 
-
+subprojects {
+	buildscript {
+		repositories { 
+			mavenCentral() 
+			maven {
+				url "https://plugins.gradle.org/m2/"
+			}
+		}
+    
 sonarqube {
     properties {
         property "sonar.sourceEncoding", "UTF-8"
