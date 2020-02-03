@@ -20,7 +20,7 @@ sonarqube {
 }
 dependencies {
   compile 'com.google.guava:guava:18.0'
-  classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.8"
+  classpath 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.8'
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
