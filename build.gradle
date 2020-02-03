@@ -2,7 +2,7 @@
 // The above triggers groovy syntax highlighting in vim
 
 plugins {
-  i
+  
   id "org.sonarqube" version "2.7"
 }
 apply plugin: 'java'
