@@ -2,7 +2,7 @@
 
 plugins {
 id "org.sonarqube" version "2.7"
-id "com.gradle.plugin-publish" version "0.9.9"
+
 }
 
 apply plugin: 'java-gradle-plugin'
@@ -28,7 +28,6 @@ repositories {
   def repository = project.hasProperty('qa') ? 'sonarsource-qa' : 'sonarsource'
   }
   dependencies {
-  
   classpath 'org.sonarsource.scanner.api:sonar-scanner-api:2.14.0.2002'
   }
 repositories {
