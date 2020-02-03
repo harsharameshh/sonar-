@@ -29,7 +29,7 @@ repositories {
   }
   dependencies {
   
-  compile 'org.sonarsource.scanner.api:sonar-scanner-api:2.14.0.2002'
+  classpath 'org.sonarsource.scanner.api:sonar-scanner-api:2.14.0.2002'
   }
 repositories {
   mavenCentral()
@@ -52,10 +52,7 @@ sonarqube {
     property 'sonar.projectName', projectName
   }
 }
-dependencies {
-  compile 'com.google.guava:guava:18.0'
-  classpath 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.8'
-}
+
 
 task sourcesJar(type: Jar, dependsOn: classes) {
     classifier = 'sources'
